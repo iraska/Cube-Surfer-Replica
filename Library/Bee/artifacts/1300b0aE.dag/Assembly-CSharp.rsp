@@ -363,6 +363,7 @@
 "Assets/Scripts/CollectibleCube.cs"
 "Assets/Scripts/Collector.cs"
 "Assets/Scripts/Movement.cs"
+"Assets/Scripts/ScreenTouchMovement.cs"
 "Assets/Stylized Astronaut/Character/Player.cs"
 "Assets/Stylized Astronaut/Character/ThirdPersonCamera.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"

@@ -24,7 +24,7 @@ public class Collector : MonoBehaviour
     {
         if (other.gameObject.tag == "Collect" && other.gameObject.GetComponent<CollectibleCube>().GethasItCollected() == false)
         {
-            height++;
+            height += 1;
             other.gameObject.GetComponent<CollectibleCube>().doItCollected();
             other.gameObject.GetComponent<CollectibleCube>().SetIndex(height);
             other.gameObject.transform.parent = mainCube.transform;
