@@ -5,7 +5,8 @@ using UnityEngine;
 public class Collector : MonoBehaviour
 {
     GameObject mainCube;
-    int height; // Each time we collect cubes, our height will increase.
+    int height; 
+
     void Start()
     {
         mainCube = GameObject.Find("MainCube");
@@ -14,16 +15,20 @@ public class Collector : MonoBehaviour
     void Update()
     {
         mainCube.transform.position = new Vector3(transform.position.x, height + 1, transform.position.z);
-        this.transform.localPosition = new Vector3(0, -height, 0);  // Let the cubes we collect be added to our bottom.
+        // Let the cubes we collect be added to between MainCube and Collector.
+        this.transform.localPosition = new Vector3(0, -height, 0);  
     }
+
     public void DecreaseHeight()
     {
         height--;
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Collect" && other.gameObject.GetComponent<CollectibleCube>().GethasItCollected() == false)
         {
+            // Each time we collect cubes, our height will increase.
             height += 1;
             other.gameObject.GetComponent<CollectibleCube>().doItCollected();
             other.gameObject.GetComponent<CollectibleCube>().SetIndex(height);
