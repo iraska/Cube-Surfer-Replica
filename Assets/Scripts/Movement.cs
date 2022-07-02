@@ -13,9 +13,13 @@ public class Movement : MonoBehaviour
     private float position;
     private float width;
 
+    public Rigidbody rigidbody;
+
     void Start()
     {
         width = (float)Screen.width / 2.0f;
+
+        rigidbody = this.GetComponent<Rigidbody>();
 
         // Position used for the cube.
         position = 0;
@@ -40,9 +44,17 @@ public class Movement : MonoBehaviour
                 position = 0;
             }
         }
+    }
 
+    // When working with physics
+    void FixedUpdate()
+    {
+        Vector3 vector3 = new Vector3(-forwardSpeed, 0, position * leftRightSpeed);
+        Debug.Log(vector3.x + " " + vector3.y + " " + vector3.z);
+        rigidbody.MovePosition(transform.position + (vector3 * Time.deltaTime));
+        
         // deltaTime: Amount of time that has passed since the last state change.
-        this.transform.Translate(position * leftRightSpeed * Time.deltaTime, 0, forwardSpeed * Time.deltaTime);
+        //this.transform.Translate(position * leftRightSpeed * Time.deltaTime, 0, forwardSpeed * Time.deltaTime);
         // We use the X (horizontal) axis to go left and right and it will go forward all the time.
     }
 }

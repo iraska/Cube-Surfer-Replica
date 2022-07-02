@@ -5,7 +5,7 @@ using UnityEngine;
 public class Collector : MonoBehaviour
 {
     GameObject mainCube;
-    int height; 
+    public int height; 
 
     void Start()
     {

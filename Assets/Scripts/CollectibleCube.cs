@@ -37,7 +37,7 @@ public class CollectibleCube : MonoBehaviour
             other.gameObject.GetComponent<BoxCollider>().enabled = false; 
             // The height of the collector should decrease when it hits the barrier.
             collector.DecreaseHeight();
-         } 
+         }
     }
 
     public bool GethasItCollected()
