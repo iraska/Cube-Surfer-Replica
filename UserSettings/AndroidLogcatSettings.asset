@@ -1,13 +1,44 @@
 {
-    "m_SelectedDeviceId": "",
+    "m_SelectedDeviceId": "150139382003271766",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "150139382003271766",
+        "name": "com.DefaultCompany.CubeSurfer",
+        "processId": 26479,
         "exited": false
     },
     "m_SelectedPriority": 0,
-    "m_KnownPackagesForSerialization": [],
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "90ee8e59",
+            "name": "com.unity3d.mobileremote",
+            "processId": 5304,
+            "exited": false
+        },
+        {
+            "deviceId": "90ee8e59",
+            "name": "com.miui.home",
+            "processId": 2719,
+            "exited": false
+        },
+        {
+            "deviceId": "90ee8e59",
+            "name": "com.mi.android.globalFileexplorer",
+            "processId": 24406,
+            "exited": false
+        },
+        {
+            "deviceId": "150139382003271766",
+            "name": "com.DefaultCompany.CubeSurfer",
+            "processId": 26232,
+            "exited": false
+        },
+        {
+            "deviceId": "150139382003271766",
+            "name": "com.DefaultCompany.CubeSurfer",
+            "processId": 26479,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {
@@ -41,9 +72,20 @@
         ]
     },
     "m_MemoryViewerState": {
-        "MemoryWindowHeight": 0.0,
-        "MemoryWindowWidth": 0.0,
-        "MemoryTypeEnabled": [],
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
         "MemoryGroup": 2,
         "Behavior": 0
     },

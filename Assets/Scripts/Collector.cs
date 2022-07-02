@@ -5,7 +5,10 @@ using UnityEngine;
 public class Collector : MonoBehaviour
 {
     GameObject mainCube;
-    public int height; 
+    public int height;
+
+    [SerializeField]
+    private AudioClip audioClip;
 
     void Start()
     {
@@ -34,9 +37,11 @@ public class Collector : MonoBehaviour
             other.gameObject.GetComponent<CollectibleCube>().SetIndex(height);
             other.gameObject.transform.parent = mainCube.transform;
 
-          //  mainCube.transform.position = new Vector3(transform.position.x, height + 1, transform.position.z);
+            // mainCube.transform.position = new Vector3(transform.position.x, height + 1, transform.position.z);
             // Let the cubes we collect be added to between MainCube and Collector.
-            //this.transform.localPosition = new Vector3(0, -height, 0);  
+            // this.transform.localPosition = new Vector3(0, -height, 0);
+
+            AudioSource.PlayClipAtPoint(audioClip, transform.position, 100);
         }
     }
 }

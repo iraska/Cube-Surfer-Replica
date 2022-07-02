@@ -5486,6 +5486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   height: 0
+  audioClip: {fileID: 8300000, guid: 0e6d4d48fef8bd34f9a18cc6b7ed156c, type: 3}
 --- !u!54 &536011092
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9604,7 +9605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 233983876}
-  distance: {x: 8, y: 5, z: 10}
+  distance: {x: 8, y: 6, z: 7}
 --- !u!1 &995234051
 GameObject:
   m_ObjectHideFlags: 0
