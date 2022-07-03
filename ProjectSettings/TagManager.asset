@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Collect
   - Barrier
+  - Win
   layers:
   - Default
   - TransparentFX

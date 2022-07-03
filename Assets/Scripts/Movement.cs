@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    // SerializeField makes a field display in the Inspector and causes it to be saved.
-    [SerializeField]    
-    private float forwardSpeed;
-    [SerializeField]
-    private float leftRightSpeed;
-
+    public float leftRightSpeed;
+    public float forwardSpeed;
+    
     private float position;
     private float width;
 
@@ -49,12 +46,10 @@ public class Movement : MonoBehaviour
     // When working with physics
     void FixedUpdate()
     {
-        Vector3 vector3 = new Vector3(-forwardSpeed, 0, position * leftRightSpeed);
-        Debug.Log(vector3.x + " " + vector3.y + " " + vector3.z);
-        rigidbody.MovePosition(transform.position + (vector3 * Time.deltaTime));
-        
-        // deltaTime: Amount of time that has passed since the last state change.
-        //this.transform.Translate(position * leftRightSpeed * Time.deltaTime, 0, forwardSpeed * Time.deltaTime);
         // We use the X (horizontal) axis to go left and right and it will go forward all the time.
+        Vector3 vector3 = new Vector3(-forwardSpeed, 0, position * leftRightSpeed);
+
+        // deltaTime: Amount of time that has passed since the last state change.
+        rigidbody.MovePosition(transform.position + (vector3 * Time.deltaTime));
     }
 }

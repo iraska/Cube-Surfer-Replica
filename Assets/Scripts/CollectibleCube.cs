@@ -7,12 +7,16 @@ public class CollectibleCube : MonoBehaviour
     bool hasItCollected;
     // Collect position/height
     int index; 
+
     public Collector collector;
+    public GameObject mainCube;
 
     void Start()
     {
         // Uncollected -flag-
-        hasItCollected = false; // Uncollected -flag-
+        hasItCollected = false;
+
+        mainCube = GameObject.Find("MainCube");
     }
 
     void Update()
@@ -29,7 +33,7 @@ public class CollectibleCube : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-         if (other.gameObject.tag == "Barrier") 
+         if ((other.gameObject.tag == "Barrier" || other.gameObject.tag == "Win") && mainCube.transform.childCount >= 3) 
          {
             transform.parent = null;
             GetComponent<BoxCollider>().enabled = false;
