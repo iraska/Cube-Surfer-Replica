@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "150139382003271766",
         "name": "com.DefaultCompany.CubeSurfer",
-        "processId": 26479,
+        "processId": 12331,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -30,12 +30,42 @@
             "deviceId": "150139382003271766",
             "name": "com.DefaultCompany.CubeSurfer",
             "processId": 26232,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "150139382003271766",
             "name": "com.DefaultCompany.CubeSurfer",
             "processId": 26479,
+            "exited": true
+        },
+        {
+            "deviceId": "150139382003271766",
+            "name": "com.unity3d.mobileremote",
+            "processId": 26584,
+            "exited": true
+        },
+        {
+            "deviceId": "150139382003271766",
+            "name": "com.android.launcher3",
+            "processId": 2990,
+            "exited": false
+        },
+        {
+            "deviceId": "150139382003271766",
+            "name": "com.DefaultCompany.CubeSurfer",
+            "processId": 7969,
+            "exited": false
+        },
+        {
+            "deviceId": "150139382003271766",
+            "name": "com.DefaultCompany.CubeSurfer",
+            "processId": 11995,
+            "exited": false
+        },
+        {
+            "deviceId": "150139382003271766",
+            "name": "com.DefaultCompany.CubeSurfer",
+            "processId": 12331,
             "exited": false
         }
     ],
