@@ -44,14 +44,18 @@ public class Collector : MonoBehaviour
         }
         else if (mainCube.transform.childCount < 3 && other.gameObject.tag == "Barrier")
         {
-            Debug.Log("Lost!");
+            Debug.Log("You Lost!");
             movement.forwardSpeed = 0;
             movement.leftRightSpeed = 0;
+
+            AudioSource audioSource = GameObject.FindGameObjectWithTag("music").GetComponent<AudioSource>();
+            //Stop the audio
+            audioSource.Stop();
         }
 
         else if (mainCube.transform.childCount < 3 && other.gameObject.tag == "Win")
         {
-            Debug.Log("Win!");
+            Debug.Log("You Win!");
             movement.forwardSpeed = 0;
             movement.leftRightSpeed = 0;
         }
