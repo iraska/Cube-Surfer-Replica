@@ -29,7 +29,7 @@ public class Collector : MonoBehaviour
     {
         height--;
     }
-
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Collect" && other.gameObject.GetComponent<CollectibleCube>().GethasItCollected() == false)

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float leftRightSpeed;
     public float forwardSpeed;
-    
+    public float leftRightSpeed;
+
     private float position;
     private float width;
 
@@ -46,10 +46,12 @@ public class Movement : MonoBehaviour
     // When working with physics
     void FixedUpdate()
     {
-        // We use the X (horizontal) axis to go left and right and it will go forward all the time.
         Vector3 vector3 = new Vector3(-forwardSpeed, 0, position * leftRightSpeed);
 
         // deltaTime: Amount of time that has passed since the last state change.
-        rigidbody.MovePosition(transform.position + (vector3 * Time.deltaTime));
+        //rigidbody.MovePosition(transform.position + (vector3 * Time.deltaTime));
+
+        // fixedDeltaTime: The interval in seconds at which physics and other fixed frame rate updates (like MonoBehaviour's FixedUpdate) are performed.
+        rigidbody.MovePosition(transform.position + (vector3 * Time.fixedDeltaTime));
     }
 }

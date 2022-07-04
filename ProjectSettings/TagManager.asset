@@ -9,6 +9,7 @@ TagManager:
   - Win
   - music
   - player
+  - gameOver
   layers:
   - Default
   - TransparentFX
