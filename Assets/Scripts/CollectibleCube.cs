@@ -35,13 +35,14 @@ public class CollectibleCube : MonoBehaviour
     {
          if ((other.gameObject.tag == "Barrier" || other.gameObject.tag == "Win") && mainCube.transform.childCount >= 3) 
          {
+
             transform.parent = null;
             GetComponent<BoxCollider>().enabled = false;
             // The collider of the barrier is also closed.
             other.gameObject.GetComponent<BoxCollider>().enabled = false;
             // The height of the collector should decrease when it hits the barrier.
             collector.DecreaseHeight();
-         }
+        }
     }
 
     public bool GethasItCollected()
