@@ -49,8 +49,6 @@ public class Movement : MonoBehaviour
         Vector3 vector3 = new Vector3(-forwardSpeed, 0, position * leftRightSpeed);
 
         // deltaTime: Amount of time that has passed since the last state change.
-        //rigidbody.MovePosition(transform.position + (vector3 * Time.deltaTime));
-
         // fixedDeltaTime: The interval in seconds at which physics and other fixed frame rate updates (like MonoBehaviour's FixedUpdate) are performed.
         rigidbody.MovePosition(transform.position + (vector3 * Time.fixedDeltaTime));
     }
