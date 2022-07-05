@@ -6,9 +6,9 @@ My first project that I developed using C# language with Unity, which is a repli
 - [Setup](#setup)
 
 ## General info
-I started this project as a case study. My aim was to combine my Unity and coding skills to develop a Cube Surfer replica that everyone can play with, and I succeeded! This project is my first concrete step towards becoming a Game Developer. 
-* ![How was it began](https://user-images.githubusercontent.com/105501017/177304051-7b8f412a-7abe-4156-93f5-1043d5d864fd.jpeg)
-* ![How was it end](https://user-images.githubusercontent.com/105501017/177304061-45dc3e89-b8bf-422f-bab9-99cd2c4c7f00.jpeg)
+I started this project as a case study. My aim was to combine my Unity and coding skills to develop a Cube Surfer replica that everyone can play with, and I succeeded! This project is my first concrete step towards becoming a Game Developer.
+* <img src="https://user-images.githubusercontent.com/105501017/177304051-7b8f412a-7abe-4156-93f5-1043d5d864fd.jpeg" width="500">
+* <img src="https://user-images.githubusercontent.com/105501017/177304061-45dc3e89-b8bf-422f-bab9-99cd2c4c7f00.jpeg" width="500">
 
 ## Technologies
 Project is created with:
