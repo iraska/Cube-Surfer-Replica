@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "150139382003271766",
+    "m_SelectedDeviceId": "90ee8e59",
     "m_SelectedPackage": {
-        "deviceId": "150139382003271766",
+        "deviceId": "90ee8e59",
         "name": "com.DefaultCompany.CubeSurfer",
-        "processId": 12331,
+        "processId": 19986,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -24,6 +24,12 @@
             "deviceId": "90ee8e59",
             "name": "com.mi.android.globalFileexplorer",
             "processId": 24406,
+            "exited": false
+        },
+        {
+            "deviceId": "90ee8e59",
+            "name": "com.DefaultCompany.CubeSurfer",
+            "processId": 19986,
             "exited": false
         },
         {
@@ -66,6 +72,18 @@
             "deviceId": "150139382003271766",
             "name": "com.DefaultCompany.CubeSurfer",
             "processId": 12331,
+            "exited": false
+        },
+        {
+            "deviceId": "150139382003271766",
+            "name": "com.DefaultCompany.CubeSurfer",
+            "processId": 30190,
+            "exited": false
+        },
+        {
+            "deviceId": "150139382003271766",
+            "name": "com.DefaultCompany.CubeSurfer",
+            "processId": 30939,
             "exited": false
         }
     ],

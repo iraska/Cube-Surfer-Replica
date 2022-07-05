@@ -28,7 +28,8 @@ public class Movement : MonoBehaviour
         if (Input.touchCount > 0)
         {
             // We need to get input from the user.
-            Touch touch = Input.GetTouch(0); // first touch
+            // first touch
+            Touch touch = Input.GetTouch(0); 
 
             // Move the cube if the screen has the finger moving.
             if (touch.phase == TouchPhase.Moved)

@@ -47,6 +47,7 @@ public class Collector : MonoBehaviour
 
             AudioSource.PlayClipAtPoint(audioClip, transform.position, 100);
         }
+
         else if (mainCube.transform.childCount < 3 && other.gameObject.tag == "Barrier")
         {
             Debug.Log("You Lost!");
