@@ -14,6 +14,7 @@ I started this project as a case study. My aim was to combine my Unity and codin
 Project is created with:
 * Unity version: LTS Release 2021.3.5f1
 * Visual Studio 2022 version: 17.1.6
+* If you face issues related to "Adaptive Framerate" you can check and change "Adaptive Performance Samsung (Android)" package's version.
 
 ## Setup
 To run the game, you can clone this project to your computer and download it as APK to your Android device with the build and run option.
